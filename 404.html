@@ -3,7 +3,7 @@
 <script>
   const redirect = document.createElement('meta');
   redirect.setAttribute('http-equiv', 'refresh');
-  redirect.setAttribute('content', `0; url=/?${encodeURIComponent(window.location.pathname)}`);
+  redirect.setAttribute('content', `0; url=/?${encodeURIComponent(window.location.pathname.trim())}`);
   document.head.appendChild(redirect);
 </script>
 
