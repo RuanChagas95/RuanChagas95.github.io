@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+<script>
+  const redirect = document.createElement('meta');
+  redirect.setAttribute('http-equiv', 'refresh');
+  redirect.setAttribute('content', `0; url=/?${encodeURIComponent(window.location.pathname)}`);
+  document.head.appendChild(redirect);
+</script>
+
+</html>
